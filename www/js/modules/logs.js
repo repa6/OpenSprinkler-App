@@ -424,7 +424,7 @@ OSApp.Logs.displayPage = function() {
 						var startTime = formatTime( sortedData[ group ][ k ][ 0 ], grouping ) ;
                                                 var endTime = formatTime( sortedData[ group ][ k ][ 3 ], grouping );
                                                 var fRate = sortedData[ group ][ k ][ 4 ];
-                                                var flowDisplay = ( typeof fRate === "number" ) ? fRate.toFixed( 2 ) + " L/min" : "";
+                                                var flowDisplay = ( typeof fRate === "number" ) ? fRate.toFixed( 2 ) + " mL/min" : "";
 
                                                 groupArray[ i ] += "<tr>" +
                                                         "<td>" + stationName + "</td>" + // Station name

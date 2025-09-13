@@ -116,10 +116,12 @@ OSApp.Language.updateLang = function( lang ) {
 	OSApp.Storage.set( { "lang": lang } );
 	OSApp.currentSession.lang = lang;
 
-	if ( lang === "en" ) {
+
+
+	/* if ( lang === "en" ) {
 		OSApp.Language.setLang();
 		return;
-	}
+	} */
 
 	$.getJSON( OSApp.UIDom.getAppURLPath() + "locale/" + lang + ".js", function( store ) {
 		OSApp.uiState.language = store.messages;
