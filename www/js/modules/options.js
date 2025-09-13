@@ -656,7 +656,7 @@ OSApp.Options.showOptions = function( expandItem ) {
 					"</td>" +
 					"<td class='tight-select'>" +
 						"<select id='o41-units' class='noselect' data-mini='true'>" +
-							"<option selected='selected' value='liter'>L/pulse</option>" +
+							"<option selected='selected' value='liter'>mL/pulse</option>" +
 							"<option value='gallon'>Gal/pulse</option>" +
 						"</select>" +
 					"</td>" +
