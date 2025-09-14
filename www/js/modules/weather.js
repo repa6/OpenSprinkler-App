@@ -728,6 +728,19 @@ OSApp.Weather.checkURLandUpdateWeather = function() {
 	} );
 };
 
+OSApp.Weather.makeTodaysForecast = function() {
+	var list = "",
+		sunrise = OSApp.currentSession.controller.settings.sunrise ? OSApp.currentSession.controller.settings.sunrise : OSApp.Weather.getSunTimes()[ 0 ],
+		sunset = OSApp.currentSession.controller.settings.sunset ? OSApp.currentSession.controller.settings.sunset : OSApp.Weather.getSunTimes()[ 1 ],
+		date, times;
+
+	list +=
+		"<span>" + OSApp.Language._( "Sunrise" ) + "</span><span>: " + OSApp.Utils.pad( parseInt( sunrise / 60 ) % 24 ) + ":" + OSApp.Utils.pad( sunrise % 60 ) + "</span><br>" +
+		"<span>" + OSApp.Language._( "Sunset" ) + "</span><span>: " + OSApp.Utils.pad( parseInt( sunset / 60 ) % 24 ) + ":" + OSApp.Utils.pad( sunset % 60 ) + "</span><br>";
+
+	return list;
+};
+
 OSApp.Weather.updateWeatherBox = function() {
 	if (!OSApp.currentSession.weather || !OSApp.currentSession.controller.settings) {
 		// Exit early if we don't have weather data or controller settings
@@ -738,7 +751,7 @@ OSApp.Weather.updateWeatherBox = function() {
 		.html(
 			/*( OSApp.currentSession.controller.settings.rd ? "<div class='rain-delay blue'><span class='icon ui-icon-alert'></span>Rain Delay<span class='time'>" + OSApp.Dates.dateToString( new Date( OSApp.currentSession.controller.settings.rdst * 1000 ), undefined, true ) + "</span></div>" : "" ) +*/
 			"<div title='" + OSApp.currentSession.weather.description + "' class='wicon'><img src='https://openweathermap.org/img/w/" + OSApp.currentSession.weather.icon + ".png'></div>" +
-			"<div class='inline tight'>" + OSApp.Weather.formatTemp( OSApp.currentSession.weather.temp ) + "</div><br><div class='inline location tight'>" + OSApp.Language._( "Current Weather" ) + "</div>" +
+			"<div class='inline tight'>" + OSApp.Weather.formatTemp( OSApp.currentSession.weather.temp ) + "</div><br><div class='inline location tight'>" + OSApp.Weather.makeTodaysForecast() + "</div>" +
 			( typeof OSApp.currentSession.weather.alert === "object" ? "<div><button class='tight help-icon btn-no-border ui-btn ui-icon-alert ui-btn-icon-notext ui-corner-all'></button>" + OSApp.currentSession.weather.alert.type + "</div>" : "" ) )
 		.off( "click" ).on( "click", function( ) {
 			/*var target = $( event.target );
