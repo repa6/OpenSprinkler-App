@@ -461,6 +461,8 @@ input[type=number] {
 .logo {
 	max-width: 340px;
 	width: 70%;
+	height: 40px;
+    padding:0!important;
     background:url(../img/final_logo.png);
 	background-size: cover;
     margin:0px auto
