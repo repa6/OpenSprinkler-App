@@ -872,7 +872,7 @@ OSApp.Sites.newLoad = function() {
 
 	// Get the current site name from the site select drop down
 	var name = $( "#site-selector" ).val(),
-		loading = "<div class='logo'></div>" +
+		loading = "<div class='logo' style='width: 170px'></div>" +
 			"<h1 style='padding-top:5px'>" + OSApp.Language._( "Connecting to" ) + " " + name + "</h1>" +
 			"<p class='cancel tight center inline-icon'>" +
 				"<span class='btn-no-border ui-btn ui-icon-delete ui-btn-icon-notext'></span>" +
