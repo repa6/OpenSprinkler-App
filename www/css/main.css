@@ -468,14 +468,12 @@ input[type=number] {
     margin:0px auto
 }
 #HydroHerp {
-    max-width: 280px;
-    width: 90%;
-	min-height: 280px;
-    height: auto;
-    padding: 0;
-    background: url(../img/HydroHerp.png);
-    background-size: cover;
-    margin: auto;
+        width: 100%;
+        height: 280px;
+        background-image: url(../img/HydroHerp.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
 }
 .ui-nosvg .logo {
     background-image:url(../img/final_logo.png)

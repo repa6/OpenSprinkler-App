@@ -15,7 +15,7 @@
 
 // Create the script tag, set the appropriate attributes
 var script = document.createElement( "script" );
-script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDaT_HTZwFojXmvYIhwWudK00vFXzMmOKc&libraries=places&callback=initMap";
+script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDg1hJbL3c58gLQtX_3EBYSYU0cj-1RHII&libraries=places&callback=initMap";
 script.async = true;
 
 // Attach your callback function to the `window` object
