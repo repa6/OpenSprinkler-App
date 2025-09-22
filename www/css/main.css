@@ -854,8 +854,9 @@ input[type=number] {
     margin: 0 auto;
 }
 .station-settings {
-    top: -3px;
-    right: 1%;
+    top: -8px;
+	height: 34px;
+    right: 0px;
 	width: 44px;
 	background: #eeeeee !important;
 }
