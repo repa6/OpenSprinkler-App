@@ -863,7 +863,7 @@ input[type=number] {
 .station-gid {
 	top: -2px;
 	right: 1%;
-	margin-right: 68px;
+	margin-right: 52px;
 	padding: 0px;
 	color: rgb(178, 178, 178) !important;
 }
@@ -871,7 +871,7 @@ input[type=number] {
 .special-station {
     top: -3px;
     right: 1%;
-    margin-right: 45px;
+    margin-right: 65px;
 }
 .station-status {
     top: -3px;
