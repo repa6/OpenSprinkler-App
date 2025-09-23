@@ -19,7 +19,6 @@
 }
 .ui-header .ui-title {
     margin: 0 auto;
-	height: 45px;
 }
 .ui-header .ui-btn, .ui-header .ui-btn:after, .ui-header .ui-btn-active {
     background-color: transparent !important;
@@ -460,7 +459,7 @@ input[type=number] {
     border: none !important;
 }
 .logo {
-	max-width: 340px;
+	max-width: 300px;
 	width: 80%;
 	height: 40px;
     padding:0!important;
