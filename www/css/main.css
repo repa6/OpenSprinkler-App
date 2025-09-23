@@ -19,6 +19,7 @@
 }
 .ui-header .ui-title {
     margin: 0 auto;
+	height: 45px;
 }
 .ui-header .ui-btn, .ui-header .ui-btn:after, .ui-header .ui-btn-active {
     background-color: transparent !important;
