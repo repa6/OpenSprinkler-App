@@ -363,7 +363,7 @@
       "Sensor 2 Delayed Off Time": "Sensor 2 Delayed Off Time",
       "When using program switch, a switch is connected to the sensor port to trigger Program 2 every time the switch is pressed for at least 1 second.": "When using program switch, a switch is connected to the sensor port to trigger Program 2 every time the switch is pressed for at least 1 second.",
       "Integrations": "Integrations",
-      "OTC": "OTC",
+      "OTC": "OTC (restart required)",
       "OpenThings Cloud (OTC) allows remote access using OTC Token .": "OpenThings Cloud (OTC) allows remote access using OTC Token .",
       "MQTT": "MQTT",
       "Send notifications to an MQTT broker and/or receive command message from the broker.": "Send notifications to an MQTT broker and/or receive command message from the broker.",
