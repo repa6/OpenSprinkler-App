@@ -556,7 +556,8 @@ input[type=number] {
     top:15%
 }
 #welcome_logo {
-    margin:0 auto 20px
+    margin:0 auto 20px;
+    width:175px;
 }
 .cancel > .ui-btn:after {
     background-color: rgba(0,0,0,0) !important

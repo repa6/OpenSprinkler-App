@@ -711,7 +711,7 @@
       "Online": "Online",
       "California Restriction": "California Restriction",
       "Rain delay has been successfully set": "Mist delay has been successfully set",
-      "Welcome to the OpenSprinkler application. This app only works with the OpenSprinkler controller which must be installed and setup on your home network.": "Welcome to the HydroHerp application. This app only works with the OpenSprinkler controller which must be installed and setup on your home network.",
+      "Welcome to the OpenSprinkler application. This app only works with the OpenSprinkler controller which must be installed and setup on your home network.": "Welcome to the HydroHERP application. This app only works with the OpenSprinkler controller which must be installed and setup on your home network.",
       "Purchase OpenSprinkler": "Purchase OpenSprinkler",
       "Add Controller": "Add Controller",
       "Export Configuration": "Export Configuration",
